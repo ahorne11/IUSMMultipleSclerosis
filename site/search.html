@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
     <title>
-        Multiple Sclerosis | IU School of Medicine
+        Search | IU School of Medicine
     </title>
     <link href="https://assets.iu.edu/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script type="text/javascript" async="" src="./MS_IU School of Medicine_files/analytics.js.download"></script>
@@ -34,6 +34,14 @@
     <link rel="dns-prefetch" href="https://s.w.org/">
     <script type="text/javascript">        /*<![CDATA[*/window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/medicine.iu.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=eb19aa3d0149efce3d9d3d5922a77400" } }; !function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e } return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);/*]]>*/</script>
     <script src="./MS_IU School of Medicine_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+
+    <!-- Filter.js -->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <script src="dist/filter.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tinysort.min.js" type="text/javascript"></script>
+    <!--           -->
+
     <style type="text/css">
         img.wp-smiley, img.emoji {
             display: inline !important;
@@ -72,7 +80,7 @@
 
 
 </head>
-<body class="page-template page-template-page-templates page-template-two-column page-template-page-templatestwo-column-php page page-id-8137 page-parent page-child parent-pageid-1745 page-layout-two-column wpb-js-composer js-comp-ver-5.1.1 vc_non_responsive" x-ms-format-detection="none">
+<body onload="onLoad()" class="page-template page-template-page-templates page-template-two-column page-template-page-templatestwo-column-php page page-id-8137 page-parent page-child parent-pageid-1745 page-layout-two-column wpb-js-composer js-comp-ver-5.1.1 vc_non_responsive" x-ms-format-detection="none">
     <noscript>
         &lt;iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-TGCJLX"
@@ -148,12 +156,12 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
 </ul>
 </div>
 </nav>
-<div class="blog-search"><form role="search" method="get" action="javascript:testJS();">
+<div class="blog-search"><form role="search" method="get" action="https://medicine.iu.edu/blogs">
 
 <input type="hidden" value="blog" name="t">
 <input type="hidden" value="0" name="v">
 <label for="blogSearch">Search Blogs</label><div class="input-cont">
-<input id="searchBox" aria-label="Blog Search" type="text" name="q" placeholder="Search the MS Center">
+<input id="blogSearch" aria-label="Blog Search" type="text" name="q" placeholder="Search the MS Center">
 <input type="submit" value=""></div></form></div></div></div><div class="subscriptionItems bg-iu-crimson"><div class="container"><div class="row-fluid" style="position:relative;"><div class="subscribe-to-blog item"><h1>Subscribe to this blog</h1><div class="stc-subscribe-wrapper well"><form role="form" method="post"><div class="form-group">
 <label for="stc-email">E-mail Address: </label>
 <input type="text" id="stc-email" class="form-control" name="stc_email" value="" placeholder="Email Address"></div><div class="checkbox">
@@ -198,93 +206,115 @@ Student Life      		      </label></div></div></div><input type="hidden" name="a
 <span class="subClose"><i class="fa fa-times" aria-hidden="true"></i></span></div></div></div></div></section>
 <!-- End of header-->
 
-    <section role="main">
-        <div id="banner-slider">
-            <div id="kw_slick_slider_136" class="kw-slider slick-slider slick-initialized" data-slider="136">
-                <div aria-live="polite" class="slick-list draggable">
-                    <div class="slick-track" role="listbox" style="opacity: 1; width: 1663px; left: 0px;">
-                        <div class="item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 1663px;">
-                            <img src="./MS_IU School of Medicine_files/neurosciencecenter2.jpg" alt=""><div class="overlay-box" id="slick-slide00"><h1>Indiana University Multiple Sclerosis Center</h1><p>Information, treatment, support, and news about MS at the Neuroscience Center</p></div>
-                        </div>
-                    </div>
+<section role="main">
+
+<section id="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs" aria-label="Breadcrumbs">
+            <li><a href="https://medicine.iu.edu/">Home</a></li>
+            <li><a href="https://medicine.iu.edu/departments/">Academic Departments</a></li>
+            <li><a href="https://medicine.iu.edu/departments/neurology/">Neurology</a></li>
+            <li><a href="MS_IU%20School%20of%20Medicine.html">Multiple Sclerosis</a></li>
+            <li class="active" aria-label="current page">
+                <span>Search</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div id="region-aux1" class="col-xs-12 col-md-3">
+                <div class="component" id="department-switcher">
+                    <h3>YOU ARE EXPLORING</h3><h5>Multiple Sclerosis</h5>
+                </div>
+                <div id="sidebar-nav" class="collapse-mobile" data-current="https://medicine.iu.edu/departments/neurology/">
+                    <h2 class="menu-toggle desktop-hide">In This Section:</h2>
+                    <nav role="navigation" aria-label="Sidebar Navigation" class="menu-wrapper">
+                        <ul class="menu" data-menudepth="0"><li class="menu-item" data-itemid="11384"><a rel="page" href="about.html">About Us</a></li><li class="menu-item" data-itemid="11453"><a rel="page" href="research.html">Research</a></li><li class="menu-item" data-itemid="11448"><a rel="page" href="staff.html">Our Staff</a></li><li class="menu-item" data-itemid="11443"><a rel="page" href="news.html">News</a></li><li class="menu-item" data-itemid="11390"><a rel="page" href="contact.html">Contact Us</a></li></ul>
+                    </nav>
                 </div>
             </div>
-        </div><section id="breadcrumbs">
-            <div class="container">
-                <ul class="breadcrumbs" aria-label="Breadcrumbs">
-                    <li><a href="https://medicine.iu.edu/">Home</a></li>
-                    <li><a href="https://medicine.iu.edu/departments/">Academic Departments</a></li>
-                    <li><a href="https://medicine.iu.edu/departments/neurology/">Neurology</a></li>
-                    <li class="active" aria-label="current page">
-                        <span>Multiple Sclerosis</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section id="content">
-            <div class="container">
-                <div class="row">
-                    <div id="region-aux1" class="col-xs-12 col-md-3">
-                        <div class="component" id="department-switcher">
-                            <h3>YOU ARE EXPLORING</h3><h5>Multiple Sclerosis</h5>
-                        </div><div id="sidebar-nav" class="collapse-mobile" data-current="https://medicine.iu.edu/departments/neurology/">
-                            <h2 class="menu-toggle desktop-hide">In This Section:</h2>
-                            <nav role="navigation" aria-label="Sidebar Navigation" class="menu-wrapper">
-                            <ul class="menu" data-menudepth="0"><li class="menu-item" data-itemid="11384"><a rel="page" href="about.html">About Us</a></li><li class="menu-item" data-itemid="11453"><a rel="page" href="research.html">Research</a></li><li class="menu-item" data-itemid="11448"><a rel="page" href="staff.html">Our Staff</a></li><li class="menu-item" data-itemid="11443"><a rel="page" href="news.html">News</a></li><li class="menu-item" data-itemid="11390"><a rel="page" href="contact.html">Contact Us</a></li></ul>
-                            </nav>
-                        </div>
-                    </div><div id="region-main" class="col-xs-12 col-md-9">
-                        <div class="iu-section-block has-color bg-white padding-condensed no-padding-top" data-component="IU Section Block"><div class="container clearfix"><div class="iu-text-block " data-component="Text Block"><p>The Indiana University Multiple Sclerosis Center at Indiana University School of Medicine earned designation as a Partner in MS Care–Center for Comprehensive and Coordinated Care from the National Multiple Sclerosis Society. The Multiple Sclerosis/Neuroimmunology Program provides multidisciplinary care for individuals with multiple sclerosis (MS). The Neuroimmunology/MS Program is a "center-without-walls," which coordinates care from neurologic, nursing, psychological, physical therapy, rehabilitation and urologic perspectives. Clinical care incorporates the use of newer maintenance immunotherapies, including interferon-beta and glatiramer acetate, as well as new symptomatic treatments, such as intrathecal baclofen for spasticity and robotic therapy. The Multiple Sclerosis Research program participates in investigational new drug studies; some trials are  single-site studies at IU School of Medicine and others are part of national and international multicenter consortiums.</p><p>The department is located in the new IU Health Neuroscience Center, a state-of-the-art outpatient center that unites all the specialties that involve nervous system disorders – Neurology, Neurosurgery, Psychiatry, Physical Medicine and Rehabilitation, Neuropsychology and Neuroradiology. It is also home of the main outpatient Neurophysiology (EEG, EMG and Evoked Potentials) laboratory at IU Health. The adjoining Indiana University Neurosciences Research building enables clinicians, basic scientists and physician scientists in the neurosciences to collaborate in research, education and patient care in an environment that is rarely achieved in academic medicine. This department has a rich tradition in academic neurology with a national reputation in neurological education and neuroscience research.</p></div></div></div><div class="iu-section-block has-color bg-white padding-condensed no-padding-top" data-component="IU Section Block">
-                            <div class="container clearfix">
-                                <div class="iu-content-grid grid-variant-b bg-white" data-columns="3" data-component="Grid Type B">
-                                    <div class="row grid-items">
-                                        <div class="grid-item">
-                                            <div class="image">
-                                                <img src="./MS_IU School of Medicine_files/Med-Students-_35.jpg" alt="Education">
-                                            </div><h1 class="title"><a href="">About Us</a></h1><div class="description">
-                                             The Multiple Sclerosis/Neuroimmunology Program provides multidisciplinary care for individuals with multiple sclerosis (MS). The Neuroimmunology/MS Program is a "center-without-walls," which coordinates care from neurologic, nursing, psychological, physical therapy, rehabilitation and urologic perspectives.
-                                            </div>
-                                        </div><div class="grid-item">
-                                            <div class="image">
-                                                <img src="./MS_IU School of Medicine_files/Research-Stock-Images019.jpg" alt="Research">
-                                            </div><h1 class="title"><a href="">Research</a></h1><div class="description">
-                                               The Multiple Sclerosis Research program participates in investigational new drug studies; some trials are single-site studies at IU School of Medicine and others are part of national and international multicenter consortiums.
-                                            </div>
-                                        </div><div class="grid-item">
-                                            <div class="image">
-                                                <img src="./MS_IU School of Medicine_files/20160411_IUSMshoot2_ER_118-1-min-480x320.jpg" alt="Clinical Care">
-                                            </div><h1 class="title"><a href="">Clinical Care</a></h1><div class="description">
-                                             Clinical care incorporates the use of newer maintenance immunotherapies, including interferon-beta and glatiramer acetate, as well as new symptomatic treatments, such as intrathecal baclofen for spasticity and robotic therapy. 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    <br /><hr /><br />
-                            <div class="container clearfix">
-                                <div class="iu-content-grid grid-variant-g bg-white" data-columns="2" data-component="Grid Type G">
-                                    <h1 class="grid-title">Faculty Spotlights</h1><div class="row grid-items">
-                                        <div class="grid-item">
-                                            <div class="image">
-                                                <img src="./MS_IU School of Medicine_files/drMattson.jpg" alt="David H. Mattson, MD, PhD">
-                                            </div><h2 class="title">
-                                                <a href="https://medicine.iu.edu/departments/neurology/faculty/14897/mattson-david/" title="" aria-label="David H. Mattson, MD, PhD" target="_blank">David H. Mattson, MD, PhD</a>
-                                            </h2><div class="subtitle">Professor of Neurology</div><div class="description"></div>
-                                        </div><div class="grid-item">
-                                            <div class="image">
-                                                <img src="./MS_IU School of Medicine_files/drGrimes.jpg" alt="Jaison A. Grimes, MD">
-                                            </div><h2 class="title">
-                                                <a href="https://medicine.iu.edu/faculty/19299/grimes-jaison/" title="" aria-label="Jaison A. Grimes, MD" target="_blank">Jaison A. Grimes, MD</a>
-                                            </h2><div class="subtitle">Assistant Professor of Clinical Neurology</div><div class="description"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div class="iu-section-block has-color bg-iu-crimson padding-normal l-fullwidth" data-component="IU Section Block"><div class="l-fullwidth clearfix"><div class="iu-text-block " data-component="Text Block"><h2>Department Values</h2><p>The department’s foundation of values includes respect for individuals who are affiliated with or come in contact with IU School of Medicine, including students, residents, fellows, faculty, staff, employees, partners, communities, patients and families; integrity that embraces the very highest standards of ethical behavior and exemplary moral character; diversity that is reflected in actions that appreciate all individuals; and cooperation that is manifested by collegial communication and collaboration.</p></div></div></div><div class="iu-section-block has-color bg-white padding-normal" data-component="IU Section Block">
+            <div id="region-main" class="col-xs-12 col-md-9">
+                <div class="iu-section-block has-color bg-white padding-condensed no-padding-top" data-component="IU Section Block"><div class="container clearfix"><div class="iu-text-block " data-component="Text Block">
+
+
+<h1>Search</h1>
+<div class="sidebar_left_find">
+    <div class="contactFormContainer">
+    <div class="row">
+        <div class="col-lg-6">
+            <input type="text" id="search_box" class="form-control" placeholder="Search the MS Center" onKeyPress="edValueKeyPress()" onKeyUp="edValueKeyPress()" />
+        </div>
+        <div class="col-lg-6">
+            <button class="btnSearch" style="min-width: 100px;"  onclick="showResults()"  value="Search">Search</button>
+        </div>
+    </div>
+    </div>
+</div>
+<h3>Filter Search by Status</h3>
+<!--value corresponds to 'status' in data file-->
+
+<!--<div id="status">
+    <input id="people" value="people" type="checkbox">
+    <span >People</span>
+    <input id="information" value="information" type="checkbox">
+    <span>Information</span>
+    <input id="researchAndNews" value="researchAndNews" type="checkbox">
+    <span>Research & News</span>
+</div>-->
+
+<div id="status">
+<label class="control control--checkbox">People
+    <input id="people" value="people" type="checkbox" />
+    <div class="control__indicator"></div>
+</label>
+<label class="control control--checkbox">Information
+    <input id="information" value="information" type="checkbox"/>
+    <div class="control__indicator"></div>
+</label>
+<label class="control control--checkbox">Research & News
+    <input id="researchAndNews" value="researchAndNews" type="checkbox"/>
+    <div class="control__indicator"></div>
+</label>
+</div>
+
+<h2>Search results for: <i><span id="searchedFor"></span></i></h2>
+
+        
+       
+            
+
+<div id="div" class="featured_services_find" >
+        <h1 class="result_count"></h1>
+        <div class="featured_list_find" id="resultList" style="display: none;"></div>
+      </div>
+      <script src="js/data.js"></script>
+      <div class="clear"></div>
+    </div>
+
+    <script id="template" type="text/html">
+        <a title="<%= title %>" href="<%= link %>">
+         <div class="fs_box">
+           <div class="fs_left">
+             <span class="fs_head"><%= title %></span>
+             <!--<span class="fs_for">for</span>-->
+             <span class="fs_disc"><br />Description <%= description %></span>
+           </div>
+           <div class="clear"></div>
+        </div><br />
+      </a>
+      </script>
+
+<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> 
+
+<br />
+
+                        </div><div class="iu-section-block has-color bg-iu-crimson padding-normal l-fullwidth" data-component="IU Section Block"><div class="l-fullwidth clearfix"><div class="iu-text-block " data-component="Text Block"><h2>Department Values</h2><p>The department's foundation of values includes respect for individuals who are affiliated with or come in contact with IU School of Medicine, including students, residents, fellows, faculty, staff, employees, partners, communities, patients and families; integrity that embraces the very highest standards of ethical behavior and exemplary moral character; diversity that is reflected in actions that appreciate all individuals; and cooperation that is manifested by collegial communication and collaboration.</p></div></div></div><div class="iu-section-block has-color bg-white padding-normal" data-component="IU Section Block">
                             <div class="container clearfix">
                                 <div class="iu-split-columns-a row" data-component="Split Columns A">
                                     <div class="col col-pos-1 col-xs-12 col-sm-8 col-xl-9">
-                                        <h2>Neurology Residency Program</h2><div class="content"><div class="iu-text-block " data-component="Text Block"><p>By gaining patient care experience in a variety of nationally recognized clinical settings, including tertiary/quaternary-care hospitals, a large community hospital, a VA hospital and a children’s hospital, graduates of IU School of Medicine’s Neurology Residency Program are prepared for a broad range of career options.</p></div></div><p class="button-row">
+                                        <h2>Neurology Residency Program</h2><div class="content"><div class="iu-text-block " data-component="Text Block"><p>By gaining patient care experience in a variety of nationally recognized clinical settings, including tertiary/quaternary-care hospitals, a large community hospital, a VA hospital and a children's hospital, graduates of IU School of Medicine's Neurology Residency Program are prepared for a broad range of career options.</p></div></div><p class="button-row">
                                             <a class="button" role="button" data-style="default" href="https://medicine.iu.edu/education/gme" target="_self">Office of GME </a>
                                         </p>
                                     </div><div class="col col-pos-2 col-xs-12 col-sm-4 col-xl-3"><h2>Popular Resources</h2><div class="content"><ul class="link-button-list" data-component="Link Button List"><li><a href="https://medicine.iu.edu/education/campuses/indianapolis/clinical-partners/" target="_self">Clinical Sites </a></li><li><a href="https://medicine.iu.edu/education/gme/employment-terms-benefits" target="_self">Employment Terms and Benefits </a></li><li><a href="https://medicine.iu.edu/education/gme/residency-programs/application-requirements" target="_self">Application Requirements </a></li></ul></div></div>
@@ -293,6 +323,8 @@ Student Life      		      </label></div></div></div><input type="hidden" name="a
                         </div>
                     </div>
                 </div>
+            </div>
+            </div>
             </div>
         </section>
     </section><div id="section-footer" aria-label="Section Footer" class="bg-iu-cream">
@@ -367,6 +399,6 @@ Student Life      		      </label></div></div></div><input type="hidden" name="a
     <script type="text/javascript" src="./MS_IU School of Medicine_files/bcb03.js.download"></script>
     <script type="text/javascript">        var kw_slick_settings = { "settings": "{\"93\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"94\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"true\",\"autoplaySpeed\":\"5000\",\"fade\":\"true\",\"cssEase\":\"linear\"},\"95\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"96\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"97\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"98\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"99\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"100\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"101\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"102\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"103\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"104\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"105\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"106\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"107\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"108\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"109\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"110\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"111\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"112\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"113\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"114\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"115\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"116\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"117\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"118\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"119\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"120\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"121\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"122\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"123\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"124\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"125\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"126\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"127\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"128\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"129\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"130\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"131\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"132\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"133\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"135\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"136\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"137\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"138\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"139\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"140\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"141\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"142\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"143\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"2601\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"2854\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"3050\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"3273\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"3340\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"3419\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"3736\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"3938\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"4006\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"5276\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"5286\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"5287\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"6147\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"},\"6229\":{\"dots\":\"false\",\"speed\":\"500\",\"slidesToShow\":\"1\",\"slidesToScroll\":\"1\",\"infinite\":\"true\",\"arrows\":\"true\",\"autoplay\":\"false\",\"autoplaySpeed\":\"1200\",\"fade\":\"false\",\"cssEase\":\"\"}}" };</script>
     <script type="text/javascript" src="./MS_IU School of Medicine_files/4b00e.js.download"></script>
-    <script src="js/basic.js"></script>
+    <script src="js/basic.js" type="text/javascript"></script>
 </body>
 </html>
