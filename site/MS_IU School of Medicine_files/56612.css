@@ -18589,10 +18589,12 @@ margin-right:20px;
 
 /*checkboxes-------------------------------------*/
 .control {
-  display: block;
+  /*display: block;*/
   position: relative;
   padding-left: 30px;
   margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   cursor: pointer;
   font-size: 18px;
 }
@@ -18607,11 +18609,11 @@ margin-right:20px;
   left: 0;
   height: 20px;
   width: 20px;
-  background: #e6e6e6;
+  background: #ccc;
 }
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
-  background: #ccc;
+  background: #b3b3b3;
 }
 .control input:checked ~ .control__indicator {
   background: #006298;
@@ -18638,3 +18640,7 @@ margin-right:20px;
   transform: rotate(45deg);
 }
 /*checkboxes-------------------------------------*/
+
+#searchFilter{
+    text-align: center; 
+}

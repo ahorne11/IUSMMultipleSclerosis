@@ -238,21 +238,22 @@ Student Life      		      </label></div></div></div><input type="hidden" name="a
             <div id="region-main" class="col-xs-12 col-md-9">
                 <div class="iu-section-block has-color bg-white padding-condensed no-padding-top" data-component="IU Section Block"><div class="container clearfix"><div class="iu-text-block " data-component="Text Block">
 
-
 <h1>Search</h1>
 <div class="sidebar_left_find">
     <div class="contactFormContainer">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-8">
             <input type="text" id="search_box" class="form-control" placeholder="Search the MS Center" onKeyPress="edValueKeyPress()" onKeyUp="edValueKeyPress()" />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <button class="btnSearch" style="min-width: 100px;"  onclick="showResults()"  value="Search">Search</button>
         </div>
     </div>
     </div>
-</div>
-<h3>Filter Search by Status</h3>
+</div><br />
+
+<div id="searchFilter">
+<h3>Filter Results by Status</h3>
 <!--value corresponds to 'status' in data file-->
 
 <!--<div id="status">
@@ -265,25 +266,24 @@ Student Life      		      </label></div></div></div><input type="hidden" name="a
 </div>-->
 
 <div id="status">
-<label class="control control--checkbox">People
+<label class="control control--checkbox"><span>People</span>
     <input id="people" value="people" type="checkbox" />
     <div class="control__indicator"></div>
 </label>
-<label class="control control--checkbox">Information
+<label class="control control--checkbox"><span>Information</span>
     <input id="information" value="information" type="checkbox"/>
     <div class="control__indicator"></div>
 </label>
-<label class="control control--checkbox">Research & News
+<label class="control control--checkbox"><span>Research & News</span>
     <input id="researchAndNews" value="researchAndNews" type="checkbox"/>
     <div class="control__indicator"></div>
 </label>
 </div>
+</div><br />
 
-<h2>Search results for: <i><span id="searchedFor"></span></i></h2>
-
-        
-       
-            
+<h2 id="resultsMessage">Search results for: <b><i><span id="searchedFor"></span></i></b></h2>
+<!--<button onclick="noResults()">Clear</button>-->
+          
 
 <div id="div" class="featured_services_find" >
         <h1 class="result_count"></h1>

@@ -38,6 +38,7 @@ function edValueKeyPress() {
     if (isEmpty(currentText)) {
         document.getElementById("resultList").style.display = 'none';
     }
+    //if(!isEmpty(currentText))
 
 }
 //regex to check if input is empty
@@ -77,10 +78,17 @@ function onLoad() {
     //document.getElementById('here').innerHTML = data.name;
     var query = data.name;
     document.getElementById('searchedFor').innerHTML = query;
-    console.log(query);
     $("#search_box").val(query).trigger('keyup');
     document.getElementById('search_box').focus();
     showResults();
+}
+
+function noResults() {
+    //document.getElementById("resultsMessage").innerHTML = "Clear";
+    var div = document.getElementById("div");
+    alert("hello");
+    var elementsHidden = $('#resultList').children().style.display = 'none';
+    console.log(elementsHidden.length);
 }
 
 
