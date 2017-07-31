@@ -66,7 +66,6 @@ function WidthChange(mq) {
         aboutContact.innerHTML = "About";
 
         checkForMobile.innerHTML = "False";
-        
     }
     console.log(checkForMobile.innerHTML)
 }
