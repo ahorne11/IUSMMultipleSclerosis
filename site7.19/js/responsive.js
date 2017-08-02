@@ -1,4 +1,4 @@
-﻿//changes nav menus based on screen size 
+﻿//changes nav menus based on screen size
 if (matchMedia) {
     var mq = window.matchMedia("(max-width: 923px)");
     mq.addListener(WidthChange);
@@ -31,7 +31,7 @@ function WidthChange(mq) {
 
         careResearch.setAttribute('href', "research.html");
         careResearch.innerHTML = "Research";
-        
+
         departmentsStaff.setAttribute('href', "staff.html");
         departmentsStaff.innerHTML = "Our Staff";
 
@@ -61,12 +61,12 @@ function WidthChange(mq) {
 
         newsNews.setAttribute('href', "https://medicine.iu.edu/news/");
         newsNews.innerHTML = "News";
-        
+
         aboutContact.setAttribute('href', "https://medicine.iu.edu/about/");
         aboutContact.innerHTML = "About";
 
         checkForMobile.innerHTML = "False";
-        
+
     }
     console.log(checkForMobile.innerHTML)
 }

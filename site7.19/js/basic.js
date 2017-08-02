@@ -34,7 +34,7 @@ function edValueKeyPress() {
     var searchedFor = document.getElementById("searchedFor");
     searchedFor.innerHTML = currentText;
 
-    
+
 
     //checks if value is empty, clears results
     if (isEmpty(currentText)) {
@@ -67,27 +67,27 @@ function showResults() {
     if (!isEmpty(currentText)) {
         noResults();
     }
-    
+
 }
 
 //redirects to new page with data appended in the url
 function testJS() {
     var checkForMobile = document.getElementById("checkForMobile");
 
-    //if (checkForMobile.innerHTML == "False") {
+    if (checkForMobile.innerHTML == "False") {
         var b = document.getElementById('searchBox').value,
             //url = 'result.html?name=' + encodeURIComponent(b);
             url = 'search.html?name=' + encodeURIComponent(b);
 
         document.location.href = url;
-    //}
-    //if (checkForMobile.innerHTML == "True") {
-        //var c = document.getElementById('mobile-s').value,
-        //        //url = 'result.html?name=' + encodeURIComponent(b);
-        //        url = 'search.html?s=' + encodeURIComponent(c);
+    }
+    if (checkForMobile.innerHTML == "True") {
+        var b = document.getElementById('mobile-s').value,
+             //url = 'result.html?name=' + encodeURIComponent(b);
+             url = 'search.html?name=' + encodeURIComponent(b);
 
-        //document.location.href = url;
-    //}
+          document.location.href = url;
+    }
 }
 
 //gets data from url, shows results, noResults runs after .05 seconds
@@ -136,6 +136,3 @@ function noResults() {
         hasResults = true;
     }
 }
-
-
-
