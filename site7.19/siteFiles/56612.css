@@ -18333,6 +18333,9 @@ margin-right:20px;
     width: 150px;
     height: 210px;
 }
+.staff-text{
+  margin: 25px !important;
+}
 .line {
     height: 5px;
     color: #EEEDEB;
@@ -18341,7 +18344,7 @@ margin-right:20px;
 /*.infoDiv {
     height: 430px;
     width: 314px;
-    width: 50%; 
+    width: 50%;
     margin: 0 auto;
 }*/
 .gridContainer{
@@ -18361,25 +18364,30 @@ margin-right:20px;
 }
 
 .gridBox:hover img{
-    opacity: .5;  
+    opacity: .5;
 }
 .gridBox:hover div{
-    opacity: 1;  
+    opacity: 1;
 }
 .middle {
   transition: .5s ease;
   opacity: .5;
   position: absolute;
-  /*margin: 0px 0px 0px -5px;*/
   margin: 80px 0px 0px -5px;
   top: 50%;
   left: 50%;
   height: 100px;
-  /*width: 155px;*/
   width: 180px;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-  
+  -ms-transform: translate(-50%, -50%);
+}
+@media (max-width: 1159px){
+  .col-lg-4{
+    max-width: 250px;
+  }
+  .middle {
+    margin: 105px 0px 0px 20px;
+  }
 }
 .text {
   background-color: #990000;
@@ -18399,10 +18407,10 @@ margin-right:20px;
     width: 850px;
 }
 .contactGridBox:hover img{
-    opacity: .5;  
+    opacity: .5;
 }
 .contactGridBox:hover div{
-    opacity: 1;  
+    opacity: 1;
 }
 .contactMiddle {
   transition: .5s ease;
@@ -18415,7 +18423,7 @@ margin-right:20px;
   /*width: 155px;*/
   width: 180px;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%) 
+  -ms-transform: translate(-50%, -50%)
 }
 /*orange stuff
 .breadcrumbs a {
@@ -18466,8 +18474,8 @@ margin-right:20px;
     color: white;
 }
 #headerTitle{
-    margin: 0px; 
-    display: inline; 
+    margin: 0px;
+    display: inline;
     vertical-align: central !important;
     margin-right: 175px;
 }
@@ -18477,6 +18485,17 @@ margin-right:20px;
     margin-right: -100px;
     display: inline !important;
     vertical-align: central !important;
+}
+@media (max-width: 1159px){
+  #contactHeaderInfo{
+    display: block !important;
+    text-align: left;
+  }
+}
+@media (max-width: 578px){
+  #contactHeaderInfo{
+    display: none !important;
+  }
 }
 .myBtn {
   cursor: pointer;
@@ -18536,8 +18555,8 @@ margin-right:20px;
 }
 #spinnerContainer{
   display: none;
-  margin-top: 100px; 
-  margin-bottom: 100px; 
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding-left: 175px;
 }
 #spinner{
@@ -18551,8 +18570,8 @@ margin-right:20px;
   height: 250px;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
-  margin-top: 100px; 
-  margin-bottom: 100px; 
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding-left: 175px;
 }
 
@@ -18585,8 +18604,20 @@ margin-right:20px;
 .btnSearch:hover {
   background-color: rgba(0, 0, 0, 0.25);
 }
-
+@media (max-width: 1159px){
+    .btnSearch{
+      margin-top: 10px;
+    }
+}
 /*checkboxes-------------------------------------*/
+.responsiveBreak{
+  display: none;
+}
+@media (max-width: 576px){
+  .responsiveBreak{
+    display: block;
+  }
+}
 .control {
   /*display: block;*/
   position: relative;
@@ -18641,7 +18672,7 @@ margin-right:20px;
 /*checkboxes-------------------------------------*/
 
 #searchFilter{
-    text-align: center; 
+    text-align: center;
 }
 #searchResultTitle{
     font-size: 28px;
@@ -18687,7 +18718,7 @@ margin-right:20px;
     display: none;
 }
 #mobileSiteBar{
-    height: 131px; 
+    height: 131px;
     position: fixed;
     z-index: 999;
     width: 100%;
